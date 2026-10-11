@@ -1,0 +1,7 @@
+fastapi==0.115.*
+uvicorn[standard]
+httpx
+pandas
+numpy
+scikit-learn==1.8.*
+joblib

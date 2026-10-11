@@ -1,0 +1,26 @@
+:root{--sand:#E8C99B;--or:#D97736;--terra:#A9472A;--mar:#6B1D2A;--night:#172B3A;--ivory:#FFF7E8;--bg:#FFF7E8;--ink:#172B3A;--card:#fff;--line:#e3cfa9}
+@media(prefers-color-scheme:dark){:root{--bg:#101c26;--ink:#f3e6cc;--card:#1a2b3a;--line:#4a3a30}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:64px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Hind,system-ui,sans-serif}
+h1,h2,h3{font-family:'Yatra One',Georgia,serif;font-weight:400;margin:0}
+nav{position:sticky;top:0;z-index:1000;background:var(--night);border-bottom:3px solid var(--or);display:flex;gap:4px;padding:8px 14px;flex-wrap:wrap;align-items:center}
+nav b{font-family:'Yatra One';color:var(--sand);font-weight:400;margin-right:auto}nav a{color:var(--ivory);text-decoration:none;padding:6px 10px;border-radius:8px;font-size:14px}nav a:hover,nav a:focus-visible{background:var(--terra)}
+.hero{min-height:92vh;position:relative;overflow:hidden;background:linear-gradient(#172B3A,#6B1D2A 40%,#D97736 72%,#E8C99B);color:var(--ivory);display:flex;flex-direction:column;align-items:center;padding:56px 16px 120px;text-align:center}
+.hero svg{position:absolute;left:0;bottom:0;width:100%;height:42%;pointer-events:none}.sun{position:absolute;right:11%;top:12%;width:150px;height:150px;border-radius:50%;background:radial-gradient(#ffd98a,#D97736 70%);box-shadow:0 0 80px #f6a24a;animation:p 5s ease-in-out infinite}
+@keyframes p{50%{transform:scale(1.07)}}@keyframes w{from{transform:translateX(-160px)}to{transform:translateX(110vw)}}.cam{animation:w 70s linear infinite}
+@media(prefers-reduced-motion:reduce){.cam,.sun{animation:none}}
+.hero h1{font-size:clamp(30px,6vw,60px);position:relative}.tag{color:var(--sand);font-style:italic;position:relative}.hero>*{position:relative}
+.btns{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:16px 0}
+.btn{background:var(--ivory);color:var(--mar);border:2px solid var(--sand);outline:2px solid var(--terra);outline-offset:2px;padding:9px 16px;border-radius:10px;font:600 15px Hind;cursor:pointer;text-decoration:none}.btn:hover,.btn:focus-visible{background:var(--sand)}.btn small{display:block;font-weight:400;font-size:12px}
+.btn.s{background:var(--terra);color:#fff;border-color:var(--terra);outline-color:var(--sand)}
+.panel{background:rgba(23,43,58,.88);border:2px solid var(--sand);border-radius:16px;padding:18px;width:min(100%,780px);color:var(--ivory);text-align:left}
+section.p{max-width:1180px;margin:0 auto;padding:46px 16px}h2.t{font-size:clamp(24px,4vw,32px);color:var(--mar);border:2px solid var(--terra);border-radius:60px 60px 6px 6px;padding:8px 24px;display:table;margin:0 auto 8px}
+@media(prefers-color-scheme:dark){h2.t,.card h3{color:var(--sand)}}
+.lead{text-align:center;max-width:700px;margin:6px auto 20px;opacity:.85}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:0 3px 14px rgba(107,29,42,.1)}.card h3{font-size:18px;color:var(--mar);margin-bottom:8px}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:16px}.g3{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+select,input{padding:7px;border:1px solid var(--terra);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit}
+.big{font:400 42px 'Yatra One'}.chip{display:inline-block;padding:3px 12px;border-radius:20px;color:#fff;font-weight:600}.src{font-size:12px;opacity:.8}
+.warn{border-left:6px solid #c62828;background:var(--card);padding:10px 14px;border-radius:8px;margin:10px 0}.err{border-left:6px solid #e8801c;background:var(--card);padding:12px;border-radius:8px}
+.day{cursor:pointer;border-top:6px solid}.day:focus-visible,.day.on{outline:3px solid var(--or)}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:right}th:first-child,td:first-child{text-align:left}
+#map{height:420px;border-radius:12px;border:2px solid var(--terra)}footer{background:var(--mar);color:var(--ivory);padding:30px 16px;text-align:center}footer small{display:block;max-width:760px;margin:8px auto;opacity:.85}
+.gauge{width:100%;max-width:260px}
